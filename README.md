@@ -61,4 +61,4 @@ This repository documents my progress and learnings throughout the **SoC Design 
 
 I would like to express my sincere gratitude to **Kunal Ghosh**, the director of VSD, for his invaluable guidance and for providing the platform to learn about SoC Design.
 
-- **LinkedIn**: [Kunal Ghosh](https://www.linkedin.com/in/kunal-ghosh-vsd/)
+- **LinkedIn**: [Kunal Ghosh](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/)
