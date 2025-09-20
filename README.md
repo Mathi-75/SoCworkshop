@@ -53,8 +53,6 @@ This repository documents my progress and learnings throughout the **SoC Design 
 
 </details>
 
-*(You can add more `<details>` blocks here for Day 1, Day 2, etc. as you complete them)*
-
 ---
 
 ## Acknowledgements
