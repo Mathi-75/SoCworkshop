@@ -4,6 +4,16 @@ This repository documents my progress and learnings throughout the **SoC Design 
 
 ---
 
+## Course Progress
+
+| Week   | Topic                                | Status      |
+| :----- | :----------------------------------- | :---------- |
+| Week 0 | Environment Setup & Introduction     | ✅ Complete |
+
+
+---
+
+
 ## Week 0: Introduction and Environment Setup
 
 ### Day 0: Course Introduction and Tool Installation
