@@ -9,8 +9,6 @@ The primary tools installed were:
 * **GTKWave** 📈: A powerful waveform viewer for visualizing and analyzing the output of simulations.
 * **Yosys** 🏗️: An open-source framework for Verilog RTL synthesis, which translates the hardware description into a gate-level netlist.
 
-After the installation process, I verified that each tool was correctly set up and accessible from the terminal. 
-
 ---
 
 
