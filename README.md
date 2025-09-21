@@ -15,7 +15,7 @@ This repository documents my progress and learnings throughout the **SoC Design 
 ## Week 0: Introduction and Environment Setup
 
 <details>
-  <summary>▶ Day 0 - Tools Installation</summary>
+  <summary>Day 0 - Tools Installation</summary>
   
   <br>
   The first day focused on getting acquainted with the course structure and setting up the necessary open-source tools for VLSI design and simulation on a Linux environment. This foundational setup is crucial for all the upcoming labs and projects.
