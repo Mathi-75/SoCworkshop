@@ -138,5 +138,16 @@ read_verilog /home/mathi/Documents/soclabs/sky130RTLDesignAndSynthesisWorkshop/v
 show
 ```
 ![image](images/sch.png)
+7. Now to see the generated netlist verilog file
+```bash
+write_verilog -noattr good_mux_netlist.v
+```
+- The `noattr` command is used to remove unwanted comments in the verilog file.
+```bash
+!gvim good_mux_netlist.v
+```
+![image](images/netlist.png)
+
+---
 
 
