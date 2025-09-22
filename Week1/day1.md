@@ -8,6 +8,10 @@ In this program we will be using iverilog to simulate our rtl designs
 
 - Testbench: setup to apply stimulus(input) to the design to check its functionality
 
+- Synthesizer: tool used for converting the rtl to netlist. We are using Yosys for our program.
+
+- .lib: contains a collection of logical modules and also different flavors of same gate
+
 ---
 
 
@@ -17,13 +21,17 @@ In this program we will be using iverilog to simulate our rtl designs
 **iverilog based Simulation flow**
 ![blockdia](images/iverilogsim.png)
 
+**Block diagram of the Synthesizer**
+![blockdiagram](images/synth.png)
+
 1. The design and the testbench is given to the iverilog softaware which gives output as `.vcd` format.
 2. This `.vcd` file is simulated using **GTKWave**  
-
+3. The design and the `.lib` is given to the **yosys** synthesizer to generate netlist file.  
+4. To verify the netlist, give the netlist and testbench to the iverilog and simulate using GTKWave. 
 ---
 
-# LABS:  
-## L1 Lab1 introduction to lab:
+## LABS:  
+### Lab1 introduction to lab:
 
 1. Create an directory:
 ```bash
@@ -47,7 +55,7 @@ ls
 
 ---
 
-## L2 Lab2 Introduction to iverilog and gtkwave
+### Lab2 Introduction to iverilog and gtkwave
   
 `AIM:` To simulate a design using the testbench
 
@@ -95,4 +103,40 @@ gvim tb_good_mux.v
 ![gvim](images/gvim2.png)
 
 ---  
+
+### Lab3 Yosys
+`AIM:` To synthesize `good_mux.v` using `Yosys`
+
+1. Open the `verilog_files` folder and run yosys
+```bash 
+yosys
+```
+![image](images/yosys11.png)
+
+2. Now read the library using 
+```bash 
+read_liberty -lib /home/mathi/Documents/soclabs/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+![image](images/yosys12.png)
+3. Now read the rtl file that needs to be synthesized
+```bash
+read_verilog /home/mathi/Documents/soclabs/sky130RTLDesignAndSynthesisWorkshop/verilog_files/good_mux.v  
+```
+![image](images/yosys13.png)
+4. Now synthesize the read file 
+```bash 
+ synth -top good_mux
+ ```
+ ![image](images/yosys14.png)
+5. Now use `abc` to synthesize the rtl file using library file 
+```bash
+ abc -liberty /home/mathi/Documents/soclabs/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+ ```
+ ![image](images/yosys15.png)
+6. Now to view the generated netlist graphically 
+```bash 
+show
+```
+![image](images/sch.png)
+
 
