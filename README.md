@@ -8,7 +8,8 @@ This repository documents my progress and learnings throughout the **SoC Design 
 
 | Week   | Topic                                | Status      |
 | :----- | :----------------------------------- | :---------- |
-| [Week 0](Week0/README.md) | Environment Setup & Introduction| ✅ Complete |
+| [Day 0](Week0/README.md) | Environment Setup & Introduction| ✅ Complete |
+| [Day 1](Week1/day1.md) | Intro to iverilog,design & testbench | ✅ Complete |
 
 ---
 
