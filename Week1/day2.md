@@ -35,9 +35,27 @@ gvim sky130_fd_sc_hd__tt_025C_1v80.lib
 **FLAT Synthesis**
 - Direct, step by step approach
 - Used in small design
-- When we synthesize the `multiple_modules_flat.v`
-
-
+- When we synthesize the `multiple_modules_flat.v`, no sub modules are created.
+```bash
+cd /home/mathi/Documents/soclabs/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+```
+```bash
+yosys
+```
+```bash
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+```bash
+read_verilog multiple_modules_flat.v
+```bash
+synth -top multiple_modules_flat
+```
+```bash
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+```bash
+show multiple_modules_flat
+```
+![image](images/flat.png)
 
 **Hierachical Synthesize**
 - Structured modelling of model
@@ -54,15 +72,29 @@ read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 ```bash
 read_verilog multiple_modules.v
+```
 ```bash
 synth -top multiple_modules
 ```
 ```bash
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+```
 ```bash
 show multiple_modules
 ```
 ![image](images/hier.png)
+
+```bash
+show sub_module1
+```
+![image](images/sub1.png)
+
+```bash
+show sub_module2
+```
+![image](images/sub2.png)
+
+---
 
 **Note:** All gates are implemented using universal gates especially NAND GATE to PMOS stacking in NOR GATE. This is due to poor mobility of majority charge carriers(holes) in PMOS.
 
