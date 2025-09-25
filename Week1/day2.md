@@ -12,6 +12,12 @@
     - The libraries stores the output parameters like **power, area, voltage, capacitance, rise power, fall power, delay, internal power** for all possible inputs.
     - It also consists of different flovours(different area,power) for same device.
 
+- Cascading of Combinational circuits causes Glitches that causes unstable output. So we connect a D - Flip Flop ckt between 2 combinational ckt to make the output more stable.
+- RESET:
+    - Asynchronous reset : independant of clk signal
+    - Synchronous reset  : dependant of clk signal 
+        - waits for posedge clk to reset the output 
+
 
 
 ## LABS:
@@ -97,5 +103,7 @@ show sub_module2
 ---
 
 **Note:** All gates are implemented using universal gates especially NAND GATE to PMOS stacking in NOR GATE. This is due to poor mobility of majority charge carriers(holes) in PMOS.
+
+
 
 

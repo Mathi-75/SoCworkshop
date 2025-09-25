@@ -199,4 +199,25 @@ show sub_module2
 
 ---
 
-**Note:** All gates are implemented using universal gates especially NAND GATE to PMOS stacking in NOR GATE. This is due to poor mobility of majority charge carriers(holes) in PMOS.
+## Lab6 Combinational Logic Optimisations 
+
+
+## Lab7 Sequencial Logic Optimisations 
+
+
+## Lab8 GLS Synth Sim Mismatch
+
+
+## Lab9 Synth sim mismatch blocking statement
+
+
+
+## Lab10 Incomplete IF
+
+
+
+## Lab11 incomplete overlapping Case
+
+
+
+## Lab12 For and For Generate
